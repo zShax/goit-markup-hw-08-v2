@@ -1,0 +1,30 @@
+.main__why-us {
+  @include flex(row nowrap, center, flex-start);
+  gap: 30px;
+
+  background-color: $background-white;
+
+  &__element {
+    max-width: 270px;
+
+    svg {
+      max-width: 270px;
+
+      background-color: $background-secondary;
+
+      padding: 25px 100px;
+    }
+
+    &__heading {
+      line-height: 1;
+
+      margin: 30px 0 10px 0;
+    }
+
+    &__paragraph {
+      text-align: left;
+
+      line-height: 1.5;
+    }
+  }
+}

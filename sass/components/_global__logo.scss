@@ -1,0 +1,31 @@
+// Logo
+.logo {
+  font-size: 26px;
+  line-height: 1;
+  font-family: "Raleway", sans-serif, serif;
+  text-decoration: none;
+  color: $text-black;
+
+  &:active,
+  &:visited {
+    @extend .logo;
+  }
+
+  &--light {
+    color: $text-white;
+
+    &:active,
+    &:visited {
+      @extend .logo--light;
+    }
+  }
+
+  &--blue {
+    color: $brand-blue;
+
+    &:active,
+    &:visited {
+      @extend .logo--blue;
+    }
+  }
+}

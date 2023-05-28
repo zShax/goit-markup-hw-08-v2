@@ -1,0 +1,56 @@
+// Utilities
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/reusables";
+@import "./utils/normalize";
+
+// Global Components
+@import "./components/global__containers";
+@import "./components/global__contacts";
+@import "./components/global__header";
+@import "./components/global__footer";
+@import "./components/global__logo";
+@import "./components/global__modal";
+
+// Index.HTML Components
+@import "./components/index__hero-section";
+@import "./components/index__why-us";
+@import "./components/index__what-we-do";
+@import "./components/index__our-team";
+@import "./components/index__regular-customers";
+@import "./components/index__modal-1";
+
+// Portfolio.HTML Components
+@import "./components/portfolio__our-products";
+@import "./components/portfolio__filters";
+@import "./components/portfolio__listings";
+
+/* ORDER */
+/*==========
+UTILITIES
+// Variables
+// SCSS Mixins
+// Reusable Classes
+// CSS Normalizer for SCSS
+
+GLOBAL COMPONENTS
+// Containers
+// Contacts
+// Header
+// Footer
+// Logo
+// Modal
+
+INDEX.HTML
+// Hero Section
+// Why us
+// What we do
+// Our Team
+// Regular Customers
+// Modal-1
+
+PORTFOLIO.HTML
+// Our Products
+// Filters
+// Listings 
+============*/

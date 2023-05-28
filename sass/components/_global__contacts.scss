@@ -1,0 +1,29 @@
+.contacts {
+  transition: color $transition-default;
+
+  display: flex;
+
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+
+  &:active,
+  &:visited {
+    @extend .contacts;
+  }
+
+  &:hover,
+  &:focus {
+    color: $brand-blue;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+
+  &__address {
+    color: $text-white;
+    font-style: normal;
+    line-height: 1;
+  }
+}

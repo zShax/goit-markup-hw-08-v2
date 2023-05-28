@@ -1,0 +1,206 @@
+.modal-1 {
+  transition: backround-color $transition-default;
+
+  position: fixed;
+  top: 0;
+
+  @include flex(row nowrap, center, center);
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: #00000033;
+
+  &__container {
+    position: relative;
+
+    background-color: $background-white;
+
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &__close-button {
+    transition: color $transition-default;
+    cursor: pointer;
+
+    position: absolute;
+    right: 8px;
+    top: 8px;
+
+    width: 30px;
+    height: 30px;
+
+    background-color: $background-white;
+    font-size: 22px;
+    color: $text-black;
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+
+    &:hover,
+    &:focus {
+      color: $brand-blue;
+    }
+  }
+
+  &__form-1-container {
+    @include flex(column nowrap, flex-start, flex-start);
+
+    margin: 8px 8px 40px 8px;
+
+    &__form-1 {
+      @include flex(column nowrap, flex-start, center);
+      gap: 10px;
+
+      margin: 32px 32px 22px 32px;
+
+      &__title {
+        text-align: center;
+        line-height: 1.4;
+
+        margin-bottom: 2px;
+      }
+
+      &__label {
+        @include flex(column nowrap, center, stretch);
+        gap: 4px;
+
+        width: calc(100% + 8px);
+
+        &__input-container {
+          position: relative;
+        }
+
+        &__input {
+          transition: border-color $transition-default;
+
+          width: 100%;
+
+          padding: 12px 12px 12px 42px;
+
+          box-sizing: border-box;
+          border: 1px solid #21212133;
+          border-radius: 4px;
+
+          &:hover,
+          &:focus {
+            border-color: $brand-blue;
+          }
+
+          &__svg {
+            transition: color $transition-default;
+            position: absolute;
+
+            color: $text-black;
+
+            top: 11px;
+            left: 12px;
+          }
+
+          &:hover + &__svg,
+          &:focus + &__svg {
+            color: $brand-blue;
+          }
+        }
+
+        &__textarea {
+          transition: border-color $transition-default;
+          resize: none;
+          height: 120px;
+
+          padding: 12px 16px;
+
+          box-sizing: border-box;
+          border: 1px solid rgba(33, 33, 33, 0.2);
+          border-radius: 4px;
+
+          margin-bottom: 10px;
+
+          &:hover,
+          &:focus {
+            border-color: $brand-blue;
+          }
+
+          &::placeholder {
+            color: #75757580;
+          }
+        }
+      }
+
+      &__checkbox-label {
+        @include flex(row nowrap, center, flex-start);
+        gap: 8px;
+
+        &__checkbox {
+          appearance: none;
+          cursor: pointer;
+
+          position: relative;
+
+          width: 15px;
+          height: 15px;
+
+          border: 2px solid $text-default;
+          border-radius: 2px;
+
+          &:checked {
+            background-color: $brand-blue;
+
+            border-color: $brand-blue;
+          }
+
+          &:checked + &__checkmark {
+            opacity: 1;
+          }
+
+          &__checkmark {
+            transition: opacity $transition-default;
+
+            cursor: pointer;
+
+            position: absolute;
+
+            opacity: 0;
+          }
+        }
+
+        &__terms-and-conditions {
+          transition: color $transition-default;
+
+          &:hover,
+          &:focus {
+            color: $brand-blue;
+          }
+        }
+      }
+
+      &__button {
+        transition: background-color $transition-default;
+        cursor: pointer;
+
+        align-self: center;
+
+        line-height: 2;
+
+        background-color: $brand-blue;
+
+        padding: 10px 80px;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 4px;
+
+        &:active {
+          @extend .modal-1__form-1-container__form-1__button;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: $brand-blue-hover;
+        }
+      }
+    }
+  }
+}

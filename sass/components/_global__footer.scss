@@ -1,0 +1,117 @@
+.footer {
+  width: $width-max;
+
+  @include flex(row nowrap, center, center);
+  gap: 105px;
+
+  background-color: $brand-gray;
+
+  &__container-1 {
+    @include flex(column nowrap, flex-start, flex-start);
+    row-gap: 12px;
+
+    margin: 60px 0;
+
+    & .logo {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__container-2 {
+    @include flex(column nowrap, flex-start, flex-start);
+    gap: 20px 0;
+
+    margin-bottom: 20px;
+
+    &__social-links {
+      @include flex(row nowrap, center, center);
+      gap: 10px;
+
+      & svg {
+        transition: background-color $transition-default,
+          color $transition-default;
+
+        overflow: visible;
+        color: $text-white;
+
+        background: #ffffff1a;
+
+        padding: 12px;
+        border-radius: 100%;
+
+        &:hover,
+        &:focus {
+          background-color: $brand-blue;
+          color: $background-white;
+        }
+      }
+    }
+  }
+
+  &__container-3 {
+    @include flex(row nowrap, flex-start, flex-start);
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+    &__newsletter {
+      @include flex(column nowrap, flex-start, flex-start);
+
+      gap: 20px;
+
+      &__input {
+        transition: border-color $transition-default;
+
+        width: 358px;
+
+        filter: drop-shadow(0px 4px 4px #00000026);
+        background-color: transparent;
+
+        font-weight: normal;
+
+        padding: 15px 16px 15px 16px;
+
+        box-sizing: border-box;
+        border: 1px solid #ffffff4d;
+        border-radius: 4px;
+
+        &:hover,
+        &:focus {
+          border-color: $brand-blue;
+        }
+
+        &::placeholder {
+          color: #ffffff99;
+
+          letter-spacing: 0.03em;
+        }
+      }
+
+      &__submit {
+        transition: background-color $transition-default;
+
+        @include flex(row nowrap, flex-start, center);
+        gap: 25px;
+
+        line-height: 1.6;
+
+        background: $brand-blue;
+
+        padding: 10px 28px 10px 43px;
+
+        box-shadow: 0px 4px 4px #00000026;
+        border: none;
+        border-radius: 4px;
+
+        margin-top: 37px;
+
+        &:hover,
+        &:focus {
+          cursor: pointer;
+
+          background-color: $brand-blue-hover;
+        }
+      }
+    }
+  }
+}

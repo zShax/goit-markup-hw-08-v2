@@ -1,0 +1,29 @@
+.main__what-we-do {
+  @include flex(row wrap, center, center);
+  gap: 50px 30px;
+
+  background-color: $background-white;
+
+  &__heading {
+    width: 100%; /* width so elements wrap under the heading */
+
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__figure {
+    position: relative;
+
+    &__caption {
+      position: absolute;
+      bottom: 4px;
+      text-align: center;
+
+      width: 100%;
+
+      background: #2f303acc;
+
+      padding: 27px 0;
+    }
+  }
+}

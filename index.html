@@ -38,14 +38,14 @@
       rel="stylesheet"
     />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <div class="container">
       <!-- Header -->
       <header class="header">
-        <a href="#home" class="logo font__weight--700">
+        <a href="#home" class="logo font__weight--700 font__letter-spacing--03">
           <span class="logo--blue">Web</span>Studio
         </a>
         <nav>
@@ -103,13 +103,15 @@
         <!-- Hero section -->
         <section class="main__hero-section">
           <div class="main__hero-section__container">
-            <h1 class="main__hero-section__heading font__weight--900">
+            <h1
+              class="main__hero-section__heading font__weight--900 font__letter-spacing--06"
+            >
               EFFECTIVE SOLUTIONS FOR<br />YOUR BUSINESS
               <!-- br tag as a reminder to go to a new line -->
             </h1>
             <button
               type="button"
-              class="main__hero-section__button font__weight--700"
+              class="main__hero-section__button font__size--16 font__weight--700 font__letter-spacing--06"
               data-modal-open
             >
               <!-- TODO: use the new and improved dialog element -->
@@ -120,7 +122,7 @@
 
         <!-- Why us -->
         <article class="main__why-us section--top">
-          <ul class="main__why-us">
+          <ul class="main__why-us font__letter-spacing--03">
             <li class="main__why-us__element">
               <svg width="70" height="70">
                 <use href="./images/icons.svg#antenna"></use>
@@ -189,7 +191,7 @@
         </article>
 
         <!-- What we do -->
-        <article class="main__what-we-do section">
+        <article class="main__what-we-do section font__letter-spacing--03">
           <h2
             class="main__what-we-do__heading font__size--32 font__weight--700"
           >
@@ -230,7 +232,7 @@
         </article>
 
         <!-- Our team -->
-        <article class="main__our-team section">
+        <article class="main__our-team section font__letter-spacing--03">
           <h2 class="main__our-team__heading font__size--32 font__weight--700">
             Our Team
           </h2>
@@ -433,7 +435,9 @@
         </article>
 
         <!-- Regular Customers -->
-        <article class="main__regular-customers section">
+        <article
+          class="main__regular-customers section font__letter-spacing--03"
+        >
           <h2
             class="main__regular-customers__heading font__size--32 font__weight--700"
           >
@@ -473,8 +477,8 @@
       </main>
 
       <!-- Footer -->
-      <footer class="footer">
-        <div class="footer__wrapper-1">
+      <footer class="footer font__letter-spacing--03">
+        <div class="footer__container-1">
           <a class="logo logo--light font__weight--700"
             ><span class="logo--blue">Web</span>Studio</a
           >
@@ -492,13 +496,11 @@
             >+1&nbsp;212-772-4150</a
           >
         </div>
-        <div class="footer__wrapper-2">
-          <h2
-            class="footer__heading font__color--white font__size--14 font__weight--700"
-          >
+        <div class="footer__container-2">
+          <h2 class="font__color--white font__size--14 font__weight--700">
             FIND US ON
           </h2>
-          <div class="footer__social-links">
+          <div class="footer__container-2__social-links">
             <a
               href="https://www.instagram.com/"
               target="blank"
@@ -537,15 +539,15 @@
             </a>
           </div>
         </div>
-        <div class="footer__wrapper-3">
+        <div class="footer__container-3">
           <form>
             <label
-              class="footer__newsletter font__size--14 font__color--white font__weight--700"
+              class="footer__container-3__newsletter font__size--14 font__color--white font__weight--700"
               for="footer-newsletter "
             >
               SUBSCRIBE TO THE NEWSLETTER
               <input
-                class="footer__newsletter__input font__color--white"
+                class="footer__container-3__newsletter__input font__color--white"
                 id="footer-newsletter"
                 type="email"
                 placeholder="E-mail"
@@ -553,7 +555,7 @@
             </label>
           </form>
           <button
-            class="footer__newsletter__submit font__color--white font__size--16"
+            class="footer__container-3__newsletter__submit font__color--white font__size--16 font__letter-spacing--06"
           >
             Subscribe
             <svg width="24" height="24">
@@ -564,7 +566,6 @@
       </footer>
 
       <!-- Modal & script -->
-      <!-- FIXME: ADD TRANSITIONS -->
       <div class="modal-1 is-hidden" data-modal>
         <div class="modal-1__container">
           <button class="modal-1__close-button" type="button" data-modal-close>
@@ -573,25 +574,27 @@
 
           <!-- Modal Form -->
           <div class="modal-1__form-1-container">
-            <form class="modal-1__form-1">
+            <form class="modal-1__form-1-container__form-1">
               <h2
-                class="modal-1__form-1__title font__weight--700 font__size--20"
+                class="modal-1__form-1-container__form-1__title font__weight--700 font__size--20"
               >
                 Leave your information and we'll call you back
               </h2>
               <label
-                class="modal-1__form-1__label font__size--12 font__color--secondary"
+                class="modal-1__form-1-container__form-1__label font__size--12 font__color--secondary"
                 for="form-1__name"
               >
                 Name
-                <div class="modal-1__form-1__label__input-container">
+                <div
+                  class="modal-1__form-1-container__form-1__label__input-container"
+                >
                   <input
-                    class="modal-1__form-1__label__input"
+                    class="modal-1__form-1-container__form-1__label__input"
                     id="form-1__name"
                     type="text"
                   />
                   <svg
-                    class="modal-1__form-1__label__input__svg"
+                    class="modal-1__form-1-container__form-1__label__input__svg"
                     height="18"
                     width="18"
                   >
@@ -600,19 +603,21 @@
                 </div>
               </label>
               <label
-                class="modal-1__form-1__label font__size--12 font__color--secondary"
+                class="modal-1__form-1-container__form-1__label font__size--12 font__color--secondary"
                 for="form-1__telephone"
               >
                 Telephone
-                <div class="modal-1__form-1__label__input-container">
+                <div
+                  class="modal-1__form-1-container__form-1__label__input-container"
+                >
                   <input
-                    class="modal-1__form-1__label__input"
+                    class="modal-1__form-1-container__form-1__label__input"
                     id="form-1__telephone"
                     type="tel"
                     name="form-1__telephone-1"
                   />
                   <svg
-                    class="modal-1__form-1__label__input__svg"
+                    class="modal-1__form-1-container__form-1__label__input__svg"
                     height="18"
                     width="18"
                   >
@@ -621,19 +626,21 @@
                 </div>
               </label>
               <label
-                class="modal-1__form-1__label font__size--12 font__color--secondary"
+                class="modal-1__form-1-container__form-1__label font__size--12 font__color--secondary"
                 for="form-1__email"
               >
                 E-mail
-                <div class="modal-1__form-1__label__input-container">
+                <div
+                  class="modal-1__form-1-container__form-1__label__input-container"
+                >
                   <input
-                    class="modal-1__form-1__label__input"
+                    class="modal-1__form-1-container__form-1__label__input"
                     id="form-1__email"
                     type="email"
                     name="form-1__email-1"
                   />
                   <svg
-                    class="modal-1__form-1__label__input__svg"
+                    class="modal-1__form-1-container__form-1__label__input__svg"
                     height="18"
                     width="18"
                   >
@@ -642,12 +649,12 @@
                 </div>
               </label>
               <label
-                class="modal-1__form-1__label font__size--12 font__color--secondary"
+                class="modal-1__form-1-container__form-1__label font__size--12 font__color--secondary"
                 for="form-1__comment"
               >
                 Comments
                 <textarea
-                  class="modal-1__form-1__label__textarea font__size--12"
+                  class="modal-1__form-1-container__form-1__label__textarea font__size--12"
                   id="form-1__comment"
                   name="form-1__comment-1"
                   placeholder="Enter the text"
@@ -656,20 +663,20 @@
                 ></textarea>
               </label>
               <div
-                class="modal-1__form-1__checkbox-label font__size--14 font__color--secondary"
+                class="modal-1__form-1-container__form-1__checkbox-label font__size--14 font__color--secondary"
               >
                 <label
-                  class="modal-1__form-1__checkbox-label"
+                  class="modal-1__form-1-container__form-1__checkbox-label"
                   for="form-1__terms-and-conditions"
                 >
                   <input
-                    class="modal-1__form-1__checkbox-label__checkbox"
+                    class="modal-1__form-1-container__form-1__checkbox-label__checkbox"
                     type="checkbox"
                     id="form-1__terms-and-conditions"
                     name="form-1__terms-and-conditions-1"
                   />
                   <svg
-                    class="modal-1__form-1__checkbox-label__checkbox__checkmark"
+                    class="modal-1__form-1-container__form-1__checkbox-label__checkbox__checkmark"
                     height="14"
                     width="14"
                   >
@@ -679,7 +686,7 @@
                 <span>
                   I agree with the letter and accept the
                   <a
-                    class="modal-1__form-1__checkbox-label__terms-and-conditions font__color--brand-blue"
+                    class="modal-1__form-1-container__form-1__checkbox-label__terms-and-conditions font__color--brand-blue"
                     href="#terms-and-conditions"
                     >Terms and Conditions</a
                   >
@@ -687,7 +694,7 @@
               </div>
             </form>
             <button
-              class="form-1__button font__color--white font__size--16 font__weight--700"
+              class="modal-1__form-1-container__form-1__button font__color--white font__size--16 font__weight--700"
               type="submit"
             >
               Send

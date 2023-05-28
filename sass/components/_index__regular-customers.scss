@@ -1,0 +1,35 @@
+.main__regular-customers {
+  @include flex(row wrap, center, center);
+  gap: 50px 30px;
+
+  &__heading {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  &__element {
+    transition: color $transition-default, border-color $transition-default;
+
+    @include flex(row nowrap, center, center);
+
+    width: 170px;
+    height: 92px;
+
+    color: $svg-inactive;
+
+    border: 1px solid $svg-inactive;
+    border-radius: 4px;
+
+    &:active {
+      @extend .main__regular-customers__element;
+    }
+
+    &:hover,
+    &:focus {
+      color: $brand-blue;
+
+      border-color: $brand-blue;
+    }
+  }
+}

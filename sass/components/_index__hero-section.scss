@@ -1,0 +1,55 @@
+.main__hero-section {
+  width: $width-max;
+  height: 100%;
+
+  text-align: center;
+
+  background: url(../images/hero-background.jpg) $brand-gray;
+  color: $text-white;
+
+  &__container {
+    @include flex(column nowrap, center, center);
+    gap: 30px 0;
+
+    /* hero-section gradient filter */
+    background: #2f3030;
+    background: -moz-linear-gradient(138deg, #2f303066 0%, #2f303065 100%);
+    background: -webkit-linear-gradient(138deg, #2f303066 0%, #2f303065 100%);
+    background: linear-gradient(138deg, #2f303066 0%, #2f303065 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3030",endColorstr="#2f3030",GradientType=1);
+  }
+
+  &__heading {
+    font-size: 44px;
+    line-height: 1.4;
+
+    margin: 200px 0 0 0;
+  }
+
+  &__button {
+    transition: background-color $transition-default;
+    cursor: pointer;
+
+    color: $text-white;
+    background-color: $brand-blue;
+    line-height: 1.9;
+
+    padding: 10px 20px;
+
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 3px 1px #0000001a, 0px 1px 2px #00000014,
+      0px 2px 2px #0000001f;
+
+    margin: 0 0 200px 0;
+
+    &:active {
+      @extend .main__hero-section__button;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $brand-blue-hover;
+    }
+  }
+}

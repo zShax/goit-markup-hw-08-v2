@@ -1,0 +1,38 @@
+// Body
+body {
+  color: $text-default;
+  letter-spacing: 0.02em;
+  font-family: "Roboto", sans-serif, serif;
+
+  .container {
+    @include flex(column wrap, center, center);
+
+    width: 100%;
+    min-width: $width-min;
+    height: 100%;
+
+    margin: 0;
+  }
+
+  .main {
+    max-width: $width-max;
+  }
+
+  .section {
+    display: flex;
+    max-width: $width-max;
+
+    padding: 94px 0 94px 0;
+
+    margin: 0;
+  }
+
+  .section--top {
+    display: flex;
+    max-width: $width-max;
+
+    padding: 94px 0 0 0;
+
+    margin: 0;
+  }
+}
