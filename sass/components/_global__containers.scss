@@ -4,35 +4,71 @@ body {
   letter-spacing: 0.02em;
   font-family: "Roboto", sans-serif, serif;
 
-  .container {
-    @include flex(column wrap, center, center);
+  @media screen and (max-width: $breakpoint-mobile) {
+    .container {
+      @include flex(column wrap, center, center);
 
-    width: 100%;
-    min-width: $desktop__width-min;
-    height: 100%;
+      width: 100%;
+      min-width: $mobile__width-min;
+      height: 100%;
 
-    margin: 0;
+      margin: 0;
+    }
+
+    .main {
+      max-width: $mobile__width-max;
+    }
+
+    .section {
+      display: flex;
+      max-width: $mobile__width-max;
+
+      padding: 60px 0 60px 0;
+
+      margin: 0;
+    }
+
+    .section--top {
+      display: flex;
+      max-width: $mobile__width-max;
+
+      padding: 60px 0 0 0;
+
+      margin: 0;
+    }
   }
 
-  .main {
-    max-width: $desktop__width-max;
-  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    .container {
+      @include flex(column wrap, center, center);
 
-  .section {
-    display: flex;
-    max-width: $desktop__width-max;
+      width: 100%;
+      min-width: $desktop__width-min;
+      height: 100%;
 
-    padding: 94px 0 94px 0;
+      margin: 0;
+    }
 
-    margin: 0;
-  }
+    .main {
+      max-width: $desktop__width-max;
+    }
 
-  .section--top {
-    display: flex;
-    max-width: $desktop__width-max;
+    .section {
+      display: flex;
+      max-width: $desktop__width-max;
 
-    padding: 94px 0 0 0;
+      padding: 94px 0 94px 0;
 
-    margin: 0;
+      margin: 0;
+    }
+
+    .section--top {
+      display: flex;
+      max-width: $desktop__width-max;
+
+      padding: 94px 0 0 0;
+
+      margin: 0;
+    }
   }
 }

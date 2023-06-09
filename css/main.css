@@ -409,30 +409,59 @@ body {
   letter-spacing: 0.02em;
   font-family: "Roboto", sans-serif, serif;
 }
-body .container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  min-width: 1200px;
-  height: 100%;
-  margin: 0;
+@media screen and (max-width: 481px) {
+  body .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 450px;
+    height: 100%;
+    margin: 0;
+  }
+  body .main {
+    max-width: 480px;
+  }
+  body .section {
+    display: flex;
+    max-width: 480px;
+    padding: 60px 0 60px 0;
+    margin: 0;
+  }
+  body .section--top {
+    display: flex;
+    max-width: 480px;
+    padding: 60px 0 0 0;
+    margin: 0;
+  }
 }
-body .main {
-  max-width: 1600px;
-}
-body .section {
-  display: flex;
-  max-width: 1600px;
-  padding: 94px 0 94px 0;
-  margin: 0;
-}
-body .section--top {
-  display: flex;
-  max-width: 1600px;
-  padding: 94px 0 0 0;
-  margin: 0;
+@media screen and (min-width: 1201px) {
+  body .container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    margin: 0;
+  }
+  body .main {
+    max-width: 1600px;
+  }
+  body .section {
+    display: flex;
+    max-width: 1600px;
+    padding: 94px 0 94px 0;
+    margin: 0;
+  }
+  body .section--top {
+    display: flex;
+    max-width: 1600px;
+    padding: 94px 0 0 0;
+    margin: 0;
+  }
 }
 
 .contacts, .contacts:active, .contacts:visited {
