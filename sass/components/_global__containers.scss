@@ -8,19 +8,19 @@ body {
     @include flex(column wrap, center, center);
 
     width: 100%;
-    min-width: $width-min;
+    min-width: $desktop__width-min;
     height: 100%;
 
     margin: 0;
   }
 
   .main {
-    max-width: $width-max;
+    max-width: $desktop__width-max;
   }
 
   .section {
     display: flex;
-    max-width: $width-max;
+    max-width: $desktop__width-max;
 
     padding: 94px 0 94px 0;
 
@@ -29,7 +29,7 @@ body {
 
   .section--top {
     display: flex;
-    max-width: $width-max;
+    max-width: $desktop__width-max;
 
     padding: 94px 0 0 0;
 

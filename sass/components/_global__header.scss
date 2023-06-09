@@ -1,7 +1,7 @@
 .header {
   @include flex(row nowrap, center, center);
 
-  max-width: $width-max;
+  max-width: $desktop__width-max;
 
   background-color: $background-white;
 

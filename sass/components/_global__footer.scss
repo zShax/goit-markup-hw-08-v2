@@ -1,5 +1,5 @@
 .footer {
-  width: $width-max;
+  width: $desktop__width-max;
 
   @include flex(row nowrap, center, center);
   gap: 105px;
